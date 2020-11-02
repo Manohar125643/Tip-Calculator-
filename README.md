@@ -14,7 +14,7 @@ Spilt into:4
 Result:₹25.00 each
 
 Test Case 2:
-Amount:1000
+Amount:2000
 Feedback:Bad
 Spilt into:2
 Result:₹50.00 each
