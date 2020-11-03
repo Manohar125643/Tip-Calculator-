@@ -8,28 +8,36 @@ function Tipcalculator() {
 			    alert("Please enter values");
 			    return;
 			  }
-			  if (numOfPeople === "" || numOfPeople <= 1) {
+			  if (numOfPeople === 0 || numOfPeople == 1) {
 			    numOfPeople = 1;
-			    document.getElementById("spilt").style.display = "none";
-			  } else {
-			    document.getElementById("spilt").style.display = "block";
+			    
+			  } 
+			  else if(numOfPeople<0)
+			  {
+			    alert("Please enter correct value");
+			    return;
 			  }
 
 			  var total = (amount * feedback) / numOfPeople;
-
 			  total = Math.round(total * 100) / 100;
+			  total = total.toFixed(2);
 
-			 total = total.toFixed(2);
+			  var totalt = (amount * feedback);
+			  totalt = Math.round(totalt);
+			  totalt = totalt.toFixed(2);
 
 			  document.getElementById("totalTip").style.display = "block";
 			  document.getElementById("tip").innerHTML = total;
+
+			  document.getElementById("t_tipp").style.display = "block";
+			  document.getElementById("t_tip").innerHTML = totalt;
 
 			}
 
 
 				document.getElementById("totalTip").style.display = "none";
-				document.getElementById("spilt").style.display = "none";
-
+				document.getElementById("t_tipp").style.display = "none";
+				
 
 				document.getElementById("calculate").onclick = function() {
 				  Tipcalculator();
