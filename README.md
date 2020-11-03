@@ -11,7 +11,8 @@ Test Case 1:
 Amount:1000
 Feedback:It was OK
 Spilt into:4
-Result:₹25.00 each
+Result:Tip ₹25.00 each
+       Toaltip: ₹100.00 
 
 Test Case 2:
 Amount:2000
