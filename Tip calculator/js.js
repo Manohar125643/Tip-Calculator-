@@ -8,18 +8,14 @@ function Tipcalculator() {
 			    alert("Please enter values");
 			    return;
 			  }
-			  if (numOfPeople === 0 || numOfPeople == 1) {
-			    numOfPeople = 1;
-			    
-			  } 
-			  else if(numOfPeople<0)
+			   if(numOfPeople<=0)
 			  {
 			    alert("Please enter correct value");
 			    return;
 			  }
 
 			  var total = (amount * feedback) / numOfPeople;
-			  total = Math.round(total * 100) / 100;
+			  total = Math.round(total);
 			  total = total.toFixed(2);
 
 			  var totalt = (amount * feedback);
