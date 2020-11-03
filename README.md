@@ -29,12 +29,11 @@ Result:Tip ₹100.00 each
        Toaltip: ₹200.00 
        
 Test Case 4:
-Amount:2000
-Feedback:Bad
-Spilt into:2
-Result:Tip ₹150.00 each
-       Toaltip: ₹300.00 
-       
+   Amount:500
+   Feedback:Good
+   Spilt into:-1
+   Result:Please select a value that is no less than 1
+              
 Test Case 5:
 Amount:5000
 Feedback:It was OK
@@ -62,3 +61,28 @@ Feedback:Good
 Spilt into:5
 Result:Tip ₹600.00 each
        Toaltip: ₹3000.00 
+       
+Test Case 9:
+   Amount:-1
+   Feedback:Good
+   Spilt into:4
+   Result:Please select a value that is no less than 1
+   
+Test Case 10:
+   Amount:500
+   Feedback:Good
+   Spilt into:4
+   Result:select an option
+   
+Test Case 11:
+   Amount:500.11
+   Feedback:Good
+   Spilt into:4
+   Result:Please select a valid value. The two nearest valid values are 500 and 501
+   
+   Test Case 12:
+   Amount:2000
+   Feedback:Bad
+   Spilt into:2
+   Result:Tip ₹150.00 each
+          Toaltip: ₹300.00 
