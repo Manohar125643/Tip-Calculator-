@@ -24,7 +24,7 @@
       </div>
       <div class="container mt-xl-4 pt-5 w-50 text-center">
          <div class="" style="width: 700px;">
-            <div class="">
+            	<!--calculator starts-->
                <form >
                   <p>How much was your bill?
                      <input id="amount" type="Number" placeholder="Bill Amount" min=1 required="required">
@@ -43,15 +43,19 @@
                   <p id="numberofpeopleValidation"></p>
                   <button type="button" id="calculate">Calculate!</button>
                </form>
+               <!--calculator end-->
+               <!--for display tip for each person-->
                <div id="totalTip">
                   Tip:
                   ₹<span id="tip"></span>
                   <small>each</small>
+                <!--for display total tip-->
                </div>
                <div id="t_tipp">
                   TotalTip:
                   ₹<span id="t_tip"></span>
                </div>
+               <!--javascript file linked-->
                <script type="text/javascript" src="js.js"></script>
             </div>
          </div>
